@@ -59,7 +59,7 @@ runs:
   using: 'composite'
 
   steps:
-    - uses: chainguard-dev/actions/setup-melange@main
+    - uses: jdolitsky/actions/setup-melange@fix-melange-setup
     - uses: chainguard-dev/actions/melange-keygen@main
       if: ${{ inputs.sign-with-temporary-key }}
       with:
